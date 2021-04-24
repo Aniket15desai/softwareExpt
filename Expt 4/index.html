@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.php">
+        <h1>Term Fees</h1>
+        <div class="input-group">
+          <label>Roll No</label>
+          <input type="text" placeholder="Roll No" name="Roll_No">
+        </div>
+        <div class="input-group">
+          <label>Name of the Student</label>
+          <input type="text" name="name" placeholder="Name of Student">
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="input-group">
+            <label>Age</label>
+            <input type="text" name="age" placeholder="Age">
+        </div>
+
+        <div class="radio-input">
+            <label>Gender</label><br><br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+        <div class="input-group">
+          <label>Course</label>
+          <select name="course[]">
+            <option selected="true" disabled="disabled">Select Course</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Automobile Engineering">Automobile Engineering</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Year/Semester</label>
+          <select name="year[]">
+              <option selected="true" disabled="disabled">Select Year and Semester</option>
+              <option value="1st Year/1st Semester">1st Year/1st Semester</option>
+              <option value="1st Year/2nd Semester">1st Year/2nd Semester</option>
+              <option value="2nd Year/3rd Semester">2nd Year/3rd Semester</option>
+              <option value="2nd Year/4th Semester">2nd Year/4th Semester</option>
+              <option value="3rd Year/5th Semester">3rd Year/5th Semester</option>
+              <option value="3rd Year/6th Semester">3rd Year/6th Semester</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Tution Fee</label>
+          <input type="text" placeholder="Tution Fee" name="Tution">
+        </div>
+        <div class="input-group">
+          <label>Equip / Maintainance Fee</label>
+          <input type="text" placeholder="Equip / Maintainance Fee" name="Equip">
+        </div>
+        <div class="input-group">
+            <label>Other Facilities Fee</label>
+            <input type="text" placeholder="Other Facilities Fee" name="FFee">
+        </div>
+        <div class="input-group">
+            <label>Developement Fee</label>
+            <input type="text" placeholder="Developement Fee" name="DFee">
+        </div>
+        <div class="input-group">
+            <label>Locker Rent Fee</label>
+            <input type="text" placeholder="Locker Rent Fee" name="LFee">
+        </div>
+        <div class="input-group">
+            <label>Library Fine</label>
+            <input type="text" placeholder="Library Fine" name="LFine">
+        </div>
+        <div class="input-group">
+            <label>Annual Magazine Fee</label>
+            <input type="text" placeholder="Annual Magazine Fee" name="AFee">
+        </div>
+        <div class="input-group">
+          <label>Remark</label>
+          <textarea type="text" placeholder="Remark" name="Remark"></textarea>
+        </div>
+
+        <div class="input-group">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
