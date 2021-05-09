@@ -9,15 +9,11 @@
     echo "<br>";
     echo "Phone Number:" .$_GET['mobileno'];
     echo "<br>";
+    echo "Age:" .$_GET['age'];
+    echo "<br>";
     echo "Gender:" .$_GET['gender'];
-    // echo "Email: $email <br>";
-    // echo "Password: $password <br>";
-    // echo "Age: $age <br>";
-    // echo "Gender: $gender <br>";
-    // foreach ($_POST['course'] as $course){
-    //     echo "Course: $course <br>";
-    // }
-    // foreach ($_POST['year'] as $Year){
-    //     echo "Year / Semester: $Year <br>";
-    // }
+    echo "<br>";
+    echo "Course:" .$_GET['course'];
+    echo "<br>";
+    echo "Year:" ._GET['year'];
 ?>

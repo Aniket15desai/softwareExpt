@@ -68,11 +68,30 @@
             }
         }
      
-       //Empty Field Validation  
+       //Age Field Validation  
+       if (empty ($_POST["age"])) {  
+               $ageErr = "Age is required";  
+       } else {  
+               $age = input_data($_POST["age"]);  
+       }
+	
+	//Gender Field Validation  
        if (empty ($_POST["gender"])) {  
                $genderErr = "Gender is required";  
        } else {  
                $gender = input_data($_POST["gender"]);  
+       }
+	//Gender Field Validation  
+       if (empty ($_POST["course"])) {  
+               $courseErr = "Course is required";  
+       } else {  
+               $Course = input_data($_POST["course"]);  
+       }
+	//Gender Field Validation  
+       if (empty ($_POST["year"])) {  
+               $yearErr = "Year is required";  
+       } else {  
+               $year = input_data($_POST["year"]);  
        }
     }
 
@@ -114,6 +133,7 @@
         <div class="input-group">
             <label>Age</label>
             <input type="text" name="age" placeholder="Age">
+	    <span>*<?php echo $ageErr; ?></span>
         </div>
 
         <div class="radio-input">
@@ -131,6 +151,7 @@
             <option value="Electrical Engineering">Electrical Engineering</option>
             <option value="Automobile Engineering">Automobile Engineering</option>
           </select>
+	  <span>*<?php echo $courseErr; ?></span>
         </div>
         <div class="input-group">
           <label>Year/Semester</label>
@@ -143,6 +164,7 @@
               <option value="3rd Year/5th Semester">3rd Year/5th Semester</option>
               <option value="3rd Year/6th Semester">3rd Year/6th Semester</option>
           </select>
+	  <span>*<?php echo $yearErr; ?></span>
         </div>
         <div class="input-group">
           <button type="submit" name="submit" class="btn">Submit</button>
@@ -151,7 +173,7 @@
     <?php
         if(isset($_POST['submit'])){
             if($nameErr == "" && $emailErr == "" && $mobilenoErr == "" && $genderErr == ""){
-                header("Location: output.php?name=$name & email=$email & mobileno=$mobileno & gender=$gender");
+                header("Location: output.php?name=$name & email=$email & mobileno=$mobileno & age=$age & gender=$gender & course=$course & year=$year");
             }
             else{
                 echo "Fill the required Field";
